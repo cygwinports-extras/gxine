@@ -1,0 +1,130 @@
+gxine
+------------------------------------------
+gxine is a GTK+ based GUI for the xine-lib video player library. It is a
+media player that can play all the audio/video formats that libxine
+supports. Currently, this includes MPEG1/2, some AVI and Quicktime files,
+some network streaming methods and disc based media (VCD, SVCD, DVD).
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gnome-vfs2-2.16.3-1
+  gtk2-x11-2.10.12-1
+  libX11_6-1.1.1-1
+  libXaw8-1.0.2-1
+  libXext6-1.0.2-1
+  libXt6-1.0.4-1
+  libdbus-glib_1_2-0.73-1
+  libjs-1.60-1
+  libintl8-0.15-1
+  libxine1-1.1.6-1
+  pango-1.16.4-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.11-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://xinehq.de/
+
+Canonical download:
+  http://downloads.sourceforge.net/xine/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gxine-0.5.11-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gxine-0.5.11-X.cygport all
+
+This will create:
+  /usr/src/gxine-0.5.11-X-src.tar.bz2
+  /usr/src/gxine-0.5.11-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gxine/gtkrc
+  /etc/gxine/keypad.xml
+  /etc/gxine/startup
+  /etc/gxine/toolbar-fullscreen.xml
+  /etc/gxine/toolbar-window.xml
+  /etc/postinstall/gxine.sh
+  /usr/bin/gxine.exe
+  /usr/bin/gxine_client.exe
+  /usr/lib/gxine/gxineplugin.dll
+  /usr/lib/gxine/gxineplugin.la
+  /usr/share/applications/gxine.desktop
+  /usr/share/doc/Cygwin/gxine-0.5.11.README
+  /usr/share/doc/gxine-0.5.11/ABOUT-NLS
+  /usr/share/doc/gxine-0.5.11/AUTHORS
+  /usr/share/doc/gxine-0.5.11/BUGS
+  /usr/share/doc/gxine-0.5.11/COPYING
+  /usr/share/doc/gxine-0.5.11/ChangeLog
+  /usr/share/doc/gxine-0.5.11/INSTALL
+  /usr/share/doc/gxine-0.5.11/README
+  /usr/share/doc/gxine-0.5.11/README.cs
+  /usr/share/doc/gxine-0.5.11/README.de
+  /usr/share/doc/gxine-0.5.11/README_l10n
+  /usr/share/doc/gxine-0.5.11/TODO
+  /usr/share/gxine/logo.mpv
+  /usr/share/gxine/mediamarks
+  /usr/share/gxine/pixmaps/gxine-icon.xpm
+  /usr/share/gxine/pixmaps/nospeaker.png
+  /usr/share/gxine/pixmaps/set-brightness.svg
+  /usr/share/gxine/pixmaps/set-contrast.svg
+  /usr/share/gxine/pixmaps/set-saturation.svg
+  /usr/share/gxine/pixmaps/set-volume.svg
+  /usr/share/gxine/pixmaps/speaker.png
+  /usr/share/gxine/pixmaps/splash.png
+  /usr/share/icons/hicolor/64x64/apps/gxine.png
+  /usr/share/locale/cs/LC_MESSAGES/gxine.mo
+  /usr/share/locale/cs/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/de/LC_MESSAGES/gxine.mo
+  /usr/share/locale/de/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/fr/LC_MESSAGES/gxine.mo
+  /usr/share/locale/fr/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/it/LC_MESSAGES/gxine.mo
+  /usr/share/locale/it/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/ja/LC_MESSAGES/gxine.mo
+  /usr/share/locale/ja/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/pl/LC_MESSAGES/gxine.mo
+  /usr/share/locale/pl/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/ru/LC_MESSAGES/gxine.mo
+  /usr/share/locale/ru/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/sv/LC_MESSAGES/gxine.mo
+  /usr/share/locale/sv/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/uk/LC_MESSAGES/gxine.mo
+  /usr/share/locale/uk/LC_MESSAGES/gxine.theme.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gxine.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gxine.theme.mo
+  /usr/share/man/de/man1/gxine.1.gz
+  /usr/share/man/de/man1/gxine_client.1.gz
+  /usr/share/man/man1/gxine.1.gz
+  /usr/share/man/man1/gxine_client.1.gz
+  /usr/share/pixmaps/gxine.png
+
+------------------
+
+Port Notes:
+
+----- version 0.5.11-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
