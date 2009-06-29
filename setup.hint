@@ -1,5 +1,5 @@
 category: Gnome Audio Video
-requires: cygwin glib2 gnome-vfs2 gtk2-x11 libX11_6 libXaw8 libXext6 libXt6 libdbus-glib_1_2 libgnomeui2 libintl8 libjs libxcb1 libxine1 pango
+requires: glib2 gnome-vfs2 gtk2-x11 libX11_6 libXaw8 libXext6 libXt6 libdbus-glib_1_2 libgnomeui2 libintl8 libjs libxcb1 libxine1 pango
 sdesc: "GTK+ Xine frontend"
 ldesc: "gxine is a GTK+ based GUI for the xine-lib video player library. 
 It is a media player that can play all the audio/video formats that 
