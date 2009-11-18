@@ -1,0 +1,17 @@
+DESCRIPTION="GTK+ Xine frontend"
+HOMEPAGE="http://www.xine-project.org/"
+SRC_URI="mirror://sourceforge/xine/${P}.tar.bz2"
+
+PATCH_URI="0.5.903-dll-suffix.patch
+           0.5.903-no-undefined.patch"
+
+DIFF_EXCLUDES="version.h misc"
+
+CYGCONF_ARGS="
+	--without-hal
+	--with-spidermonkey=/usr/include/js
+	--with-xcb
+	--disable-lirc
+"
+
+DOCS="README.cs README.de README_l10n"

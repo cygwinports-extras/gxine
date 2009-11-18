@@ -1,0 +1,11 @@
+--- origsrc/gxine-0.5.903/browser-plugin/Makefile.am	2007-05-24 13:17:28.000000000 -0500
++++ src/gxine-0.5.903/browser-plugin/Makefile.am	2008-06-12 22:52:21.875000000 -0500
+@@ -21,7 +21,7 @@
+ noinst_HEADERS = $(plugin_headers)
+ 
+ gxineplugin_la_SOURCES = $(plugin_source)
+-gxineplugin_la_LDFLAGS = -avoid-version -module
++gxineplugin_la_LDFLAGS = -avoid-version -module -no-undefined
+ gxineplugin_la_LIBADD  = -lm $(X_LIBS) $(X_EXTRA_LIBS) -lX11 -lXt -lXaw $(DYNAMIC_LD_LIBS)
+ 
+ debug: CFLAGS=$(DEBUG_CFLAGS)
