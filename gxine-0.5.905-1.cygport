@@ -13,5 +13,6 @@ CYGCONF_ARGS="
 	--with-xcb
 	--disable-lirc
 "
+MAKEOPTS+=" JS_LIBS=-lmozjs"
 
 DOCS="README.cs README.de README_l10n"
