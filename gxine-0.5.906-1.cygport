@@ -2,17 +2,20 @@ DESCRIPTION="GTK+ Xine frontend"
 HOMEPAGE="http://www.xine-project.org/"
 SRC_URI="mirror://sourceforge/xine/${P}.tar.bz2"
 
-PATCH_URI="0.5.903-dll-suffix.patch
-           0.5.903-no-undefined.patch"
+PATCH_URI="
+	mirror://portage/media-video/${PN}/files/${P}-endif.patch
+	mirror://portage/media-video/${PN}/files/${P}-playlist_segfault.patch
+	0.5.903-dll-suffix.patch
+	0.5.903-no-undefined.patch
+	0.5.906-cygwin-segv.patch
+"
 
 DIFF_EXCLUDES="version.h misc"
 
 CYGCONF_ARGS="
 	--without-hal
-	--with-spidermonkey=/usr/include/js
 	--with-xcb
 	--disable-lirc
 "
-MAKEOPTS+=" JS_LIBS=-lmozjs"
 
 DOCS="README.cs README.de README_l10n"
