@@ -37,7 +37,7 @@
    section = "Mozilla";
  
 -  sname = g_build_filename (plugindir, "gxineplugin.so", NULL);
-+  sname = g_build_filename (plugindir, "gxineplugin."G_MODULE_SUFFIX, NULL);
++  sname = g_build_filename (plugindir, "gxineplugin." G_MODULE_SUFFIX, NULL);
    if (stat (sname, &st))
      return;
  
@@ -46,7 +46,7 @@
      g_free (fname);
  
 -    fname = g_build_filename (g_get_home_dir(), dir[i], "plugins/gxineplugin.so", NULL);
-+    fname = g_build_filename (g_get_home_dir(), dir[i], "plugins/gxineplugin."G_MODULE_SUFFIX, NULL);
++    fname = g_build_filename (g_get_home_dir(), dir[i], "plugins/gxineplugin." G_MODULE_SUFFIX, NULL);
      buf[0] = 0;
  
      /* If the destination object exists, check if it's a symlink and if it's
@@ -65,7 +65,7 @@
    cb.mailcap = new_toggle (vb, "~_/.mailcap", TRUE);
  
 -  sname = g_build_filename (plugindir, "gxineplugin.so", NULL);
-+  sname = g_build_filename (plugindir, "gxineplugin."G_MODULE_SUFFIX, NULL);
++  sname = g_build_filename (plugindir, "gxineplugin." G_MODULE_SUFFIX, NULL);
    cb.moz = new_toggle (vb, _("_Mozilla & Mozilla Firefox (plugin)"), !stat (sname, &st));
    g_free (sname);
  
