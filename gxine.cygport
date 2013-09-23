@@ -14,7 +14,7 @@ PATCH_URI="
 	mirror://portage/media-video/${PN}/files/${PN}-0.5.906-endif.patch
 	0.5.903-dll-suffix.patch
 	0.5.903-no-undefined.patch
-	0.5.906-cygwin-segv.patch
+	0.5.906-no-weak-symbols.patch
 	0.5.907-glib-single-includes.patch
 "
 

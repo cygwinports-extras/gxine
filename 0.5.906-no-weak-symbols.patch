@@ -1,0 +1,23 @@
+PE extern weak symbols do not work like ELF, and fail to link on x86-64.
+
+--- origsrc/gxine-0.5.907/src/post.c	2011-08-07 06:14:47.000000000 -0500
++++ src/gxine-0.5.907/src/post.c	2013-09-23 17:30:27.205595000 -0500
+@@ -89,7 +89,6 @@ static GtkTooltips *tips = NULL;
+ static xine_video_port_t *vo_none = NULL;
+ static xine_audio_port_t *ao_none = NULL;
+ 
+-extern const char *xine_get_post_plugin_description () __attribute__((weak));
+ 
+ static char *
+ post_parse_parameters (xine_post_t *plugin, const char *paramstr)
+--- origsrc/gxine-0.5.906/src/utils.c	2010-12-05 05:38:44.000000000 -0600
++++ src/gxine-0.5.906/src/utils.c	2011-12-11 15:37:18.075465200 -0600
+@@ -797,8 +797,6 @@ void config_update_default (const char *
+ 
+ /* List a subset of video plugins */
+ 
+-extern const char *const *xine_list_video_output_plugins_typed (xine_t *, uint64_t)
+-	__attribute__((__weak__));
+ 
+ const char *const *gxine_list_video_output_plugins (xine_t *xine)
+ {
