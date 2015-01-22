@@ -1,5 +1,5 @@
 NAME="gxine"
-VERSION=0.5.907
+VERSION=0.5.908
 RELEASE=1
 CATEGORY="Audio Video"
 SUMMARY="GTK+ Xine frontend and browser plugin"
@@ -8,14 +8,13 @@ It is a media player that can play all the audio/video formats that libxine
 supports. Currently, this includes MPEG1/2, some AVI and Quicktime files, some
 network streaming methods and disc based media (VCD, SVCD, DVD)."
 HOMEPAGE="http://www.xine-project.org/"
-SRC_URI="mirror://sourceforge/xine/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/xine/gxine-${VERSION}.tar.xz"
 
 PATCH_URI="
-	mirror://portage/media-video/${PN}/files/${PN}-0.5.906-endif.patch
+	mirror://portage/media-video/gxine/files/gxine-0.5.906-endif.patch
 	0.5.903-dll-suffix.patch
 	0.5.903-no-undefined.patch
 	0.5.906-no-weak-symbols.patch
-	0.5.907-glib-single-includes.patch
 "
 
 DIFF_EXCLUDES="version.h misc"
