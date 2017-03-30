@@ -1,6 +1,6 @@
 NAME="gxine"
 VERSION=0.5.908
-RELEASE=1
+RELEASE=2
 CATEGORY="Audio Video"
 SUMMARY="GTK+ Xine frontend and browser plugin"
 DESCRIPTION="gxine is a GTK+ based GUI for the xine-lib video player library.
@@ -20,6 +20,7 @@ PATCH_URI="
 DIFF_EXCLUDES="version.h misc"
 
 CYGCONF_ARGS="
+	--without-browser-plugin
 	--without-hal
 	--with-xcb
 	--disable-lirc
