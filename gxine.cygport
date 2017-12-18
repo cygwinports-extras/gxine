@@ -1,6 +1,6 @@
 NAME="gxine"
-VERSION=0.5.908
-RELEASE=2
+VERSION=0.5.909
+RELEASE=1
 CATEGORY="Audio Video"
 SUMMARY="GTK+ Xine frontend and browser plugin"
 DESCRIPTION="gxine is a GTK+ based GUI for the xine-lib video player library.
@@ -9,9 +9,7 @@ supports. Currently, this includes MPEG1/2, some AVI and Quicktime files, some
 network streaming methods and disc based media (VCD, SVCD, DVD)."
 HOMEPAGE="http://www.xine-project.org/"
 SRC_URI="mirror://sourceforge/xine/gxine-${VERSION}.tar.xz"
-
 PATCH_URI="
-	mirror://portage/media-video/gxine/files/gxine-0.5.906-endif.patch
 	0.5.903-dll-suffix.patch
 	0.5.903-no-undefined.patch
 	0.5.906-no-weak-symbols.patch
@@ -27,5 +25,3 @@ CYGCONF_ARGS="
 "
 
 DOCS="README.cs README.de README_l10n"
-
-KEEP_LA_FILES="none"
